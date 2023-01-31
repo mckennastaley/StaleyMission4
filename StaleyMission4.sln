@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaleyMission4", "StaleyMission4\StaleyMission4.csproj", "{7ABEC369-AA8D-4B16-87F6-B9F9B03DFA53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ABEC369-AA8D-4B16-87F6-B9F9B03DFA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABEC369-AA8D-4B16-87F6-B9F9B03DFA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABEC369-AA8D-4B16-87F6-B9F9B03DFA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABEC369-AA8D-4B16-87F6-B9F9B03DFA53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21318D51-ED17-4D26-9927-40437CC41D6A}
+	EndGlobalSection
+EndGlobal

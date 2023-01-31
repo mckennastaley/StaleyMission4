@@ -1,0 +1,38 @@
+﻿body {
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+label {
+
+    color: dodgerblue;
+    width: 150px;
+}
+
+textarea{
+
+    font-size: 20px;
+}
+
+img{
+    width: 700px;
+    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.gradeAlert{
+    color: forestgreen;
+    font-size: 30px;
+}
+
+
+
+
+
+

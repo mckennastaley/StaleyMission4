@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using StaleyMission4.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +16,16 @@ namespace StaleyMission4.Controllers
             return View();
         }
 
+        [HttpGet]
         //View for calculator page
         public IActionResult Calculator()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        //Post for Calculator form
+        public IActionResult Calculator(calcmodel model)
         {
             return View();
         }

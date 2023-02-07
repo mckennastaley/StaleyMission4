@@ -2,28 +2,34 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Grade Calculator";
 }
+
+
+@model calcmodel;
 
 <!-- grade calculator -->
 <h3>Grade calculator:</h3>
 <br />
-<form>
+<form method="post">
     <p>Input your grade using 1 decimal point (ex: 90.3)</p>
     <label>Assignments</label>
-    <input id="fAssi" type="number" min="0" max="110" /><br /><br />
+    <input id="fAssi" asp-for="Assignment" type="number" min="0" max="110" /><br /><br />
     <label>Group Project</label>
-    <input id="fGrou" type="number" min="0" max="110" /><br /><br />
+    <input id="fGrou" asp-for="GroupProject" type="number" min="0" max="110" /><br /><br />
     <label>Quizzes</label>
-    <input id="fQuiz" type="number" min="0" max="110" /><br /><br />
+    <input id="fQuiz" asp-for="Quiz" type="number" min="0" max="110" /><br /><br />
     <label>Midterm Exam</label>
-    <input id="fMidt" type="number" min="0" max="110" /><br /><br />
+    <input id="fMidt" asp-for="Midterm" type="number" min="0" max="110" /><br /><br />
     <label>Final Exam</label>
-    <input id="fFina" type="number" min="0" max="110" /><br /><br />
+    <input id="fFina" asp-for="Final" type="number" min="0" max="110" /><br /><br />
     <label>INTEX</label>
-    <input id="fINTE" type="number" min="0" max="110" /><br /><br />
+    <input id="fINTE" asp-for="Intex" type="number" min="0" max="110" /><br /><br />
     <br />
-    <input id="CalcBtn" type="button" value="Calculate Grade" />
+    <input id="CalcBtn" type="submit" value="Calculate Grade" />
     <br /><br />
     <p id="grdResult" class="gradeAlert"></p>
+    
+    <div asp-validation-summary="All"></div>
 
 </form>

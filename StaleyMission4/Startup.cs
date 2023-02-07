@@ -22,6 +22,11 @@ namespace StaleyMission4
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            if (env.IsEnvironment("Development"))
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -30,7 +35,7 @@ namespace StaleyMission4
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller = Grade}/{action=Index}/{id?}"
+                    pattern: "{controller=Grade}/{action=Index}/{id?}"
                     );
             });
         }

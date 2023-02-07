@@ -2,81 +2,37 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "McKenna Staley Blog";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
 
-    <meta charset="utf-8" />
-    <title>
-        McKenna Staley Blog
-    </title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+<!-- header listing preferred name -->
+<h1>McKenna</h1>
+<br />
 
-    <!--importing styling-->
-    <link href="css/default.css" rel="stylesheet" />
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<!-- paragraph about what I hope ot learn in IS413 -->
+<p>
+    IS 413 is a class I am looking forward to because of its challenging nature. While I do not plan to go into programming
+    for a career, I recognize the value it will add to me as an employee in the cybersecurity and risk analysis fields of business.
+    I am looking forward to gaining a better understanding of MVC, ASP.net, and C#. I am excited to understand how strong
+    coding languages work. I believe this will all add to my value and hirability as an employee because it will allow me to
+    better think through the complexities of tech-related business issues and better communicate with more technical
+    teams at work.
+</p><br />
 
-</head>
-<body>
-    <!-- header listing preferred name -->
-    <h1>McKenna</h1>
-    <br />
+<!-- a photo of me doing something I enjoy -->
+<img src="img/IMG_5280.jpg" class="center" alt="McKenna in Disneyland with her husband" />
+<br /><br /><br />
 
-    <!-- paragraph about what I hope ot learn in IS413 -->
-    <p>
-        IS 413 is a class I am looking forward to because of its challenging nature. While I do not plan to go into programming
-        for a career, I recognize the value it will add to me as an employee in the cybersecurity and risk analysis fields of business.
-        I am looking forward to gaining a better understanding of MVC, ASP.net, and C#. I am excited to understand how strong
-        coding languages work. I believe this will all add to my value and hirability as an employee because it will allow me to
-        better think through the complexities of tech-related business issues and better communicate with more technical
-        teams at work.
-    </p><br />
+<!-- list of the jobs I am interedted in upon gradating -->
+<h3>
+    Jobs I am interested in:
+</h3>
+<ol>
+    <li>Cybersecurity consultant</li>
+    <li>Risk analyst</li>
+    <li>Computer forensics investigator</li>
+</ol><br /><br />
 
-    <!-- a photo of me doing something I enjoy -->
-    <img src="img/IMG_5280.jpg" class="center" alt="McKenna in Disneyland with her husband" />
-    <br /><br /><br />
-
-    <!-- list of the jobs I am interedted in upon gradating -->
-    <h3>
-        Jobs I am interested in:
-    </h3>
-    <ol>
-        <li>Cybersecurity consultant</li>
-        <li>Risk analyst</li>
-        <li>Computer forensics investigator</li>
-    </ol><br /><br />
-
-    <!-- grade calculator -->
-    <h3>Grade calculator:</h3>
-    <br />
-    <form>
-        <p>Input your grade using 1 decimal point (ex: 90.3)</p>
-        <label>Assignments</label>
-        <input id="fAssi" type="number" min="0" max="110" /><br /><br />
-        <label>Group Project</label>
-        <input id="fGrou" type="number" min="0" max="110" /><br /><br />
-        <label>Quizzes</label>
-        <input id="fQuiz" type="number" min="0" max="110" /><br /><br />
-        <label>Midterm Exam</label>
-        <input id="fMidt" type="number" min="0" max="110" /><br /><br />
-        <label>Final Exam</label>
-        <input id="fFina" type="number" min="0" max="110" /><br /><br />
-        <label>INTEX</label>
-        <input id="fINTE" type="number" min="0" max="110" /><br /><br />
-        <br />
-        <input id="CalcBtn" type="button" value="Calculate Grade" />
-        <br /><br />
-        <p id="grdResult" class="gradeAlert"></p>
-
-    </form>
-
-
-    <!--importing files-->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
-    <script src="js/GradeCalc.js"></script>
-</body>
-</html>
+<!--importing files-->
+<script src="js/GradeCalc.js"></script>
